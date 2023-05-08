@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>
+<a href="{{type1_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type1L}}</a>
+<a href="{{type2_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type2L}}</a>
+<a href="{{type3_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type3L}}</a>
+</p>
+<br>
+
+<p>
+<b style="line-height:2em"><a href="/term/hasDegreeOfRemove" style="color:black">Degree of Remove:</a></b>
+<a href="{{degreeOfRemove_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{degreeOfRemoveL}}</a>
+</p>
+
+<p>
+<b style="line-height:2em"><a href="/term/describes" style="color:black">Describes:</a></b>
+<a href="{{portraitProduction_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{portraitProductionL}}</a>
+</p>
+
+<p>
+<b style="line-height:2em"><a href="/term/portraitSittingAccountInRecord" style="color:black">Record:</a></b>
+<a href="{{record_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{recordL}}</a>
+</p>
+
+<p>
+<b style="line-height:2em"><a href="/term/hasSource" style="color:black">Source:</a></b>
+<a href="{{source_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{sourceL}}</a>
+</p>
+
+{% if startPage == startPage %}   
+<p>
+<b style="line-height:2em"><a href="/term/startPageInSource" style="color:black">Start Page:</a></b> {{startPage}}
+</p>
+{% else %} 
+{% endif %}
+
+{% if endPage == endPage %}   
+<p>
+<b style="line-height:2em"><a href="/term/startPageInSource" style="color:black">End Page:</a></b> {{endPage}}
+</p>
+{% else %} 
+{% endif %}
+
+<p>
+<b style="line-height:2em"><a href="/term/hasText" style="color:black">Text:</a></b>
+{% set truncatedtext = text.split( ) %}
+{{(truncatedtext)[:400]|join(" ")}}
+{% if truncatedtext|length > 400 %}
+... [Truncated due to copyright]
+{% else %}
+{% endif %}
+</p>
+
+
+{% endblock %}

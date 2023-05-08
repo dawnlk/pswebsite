@@ -1,0 +1,385 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>
+<a href="{{type1_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type1L}}</a>
+</p>
+<br>
+
+{% if domainL == domainL %}   
+<p>
+<b style="line-height:2em">Domain: </b>
+<a href="{{domain_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{domainL}}</a>
+</p>
+{% else %}
+{%endif %}
+
+{% if range0L ==range0L %}   
+<p>
+<b style="line-height:2em">Range: </b>
+<a href="{{range0_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{range0L}}</a>
+</p>
+{% else %}
+{%endif %}
+
+{% if inverseL == inverseL %}   
+<p>
+<b style="line-height:2em">Inverse: </b>
+<a href="{{inverse_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{inverseL}}</a>
+</p>
+{% else %}
+{%endif %}
+
+{% if property0L == property0L %}   
+<p>
+<b style="line-height:2em">Sub-Property of: </b>
+<a href="{{property0_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{property0L}}</a>
+</p>
+{% else %}
+{%endif %}
+	
+{% if class0L ==class0L%}   
+<p>
+<b style="line-height:2em">Sub-Class of: </b>
+<a href="{{class0_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{class0L}}</a>
+{% else %}
+{%endif %}
+{% if class1L == class1L%}   
+<a href="{{class1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{class1L}}</a>
+{% else %}
+{%endif %}
+{% if class2L == class2L%}   
+<a href="{{class2_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{class2L}}</a>
+{% else %}
+{%endif %}
+{% if class3L == class3L%}   
+<a href="{{class3_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{class3L}}</a>
+{% else %}
+</p>
+{%endif %}
+
+{% if comment ==comment %}   
+<p>
+<b style="line-height:2em">Comment: </b>
+{{comment}}
+</p>
+{% else %}
+{%endif %}
+
+{% if type1L=='Class'%}
+<b style="line-height:2em">Examples:</b>
+<br>
+<ul>
+{% for iri, art_object in art_object_data.items() %}
+{% if art_object[3]==IRI %}
+<li><a href="/artobject/{{art_object[1]}}.html" >{{ art_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if art_object[4]==IRI %}
+<li><a href="/artobject/{{art_object[1]}}.html" >{{ art_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if art_object[5]==IRI %}
+<li><a href="/artobject/{{art_object[1]}}.html" >{{ art_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if art_object[6]==IRI %}
+<li><a href="/artobject/{{art_object[1]}}.html" >{{ art_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if art_object[7]==IRI %}
+<li><a href="/artobject/{{art_object[1]}}.html" >{{ art_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if art_object[8]==IRI %}
+<li><a href="/artobject/{{art_object[1]}}.html" >{{ art_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if art_object[9]==IRI %}
+<li><a href="/artobject/{{art_object[1]}}.html" >{{ art_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% endfor %}
+
+
+{% for iri, account in account_data.items() %}
+{% if account[3]==IRI %}
+<li><a href="/account/{{account[1]}}.html" >{{ account['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if account[4]==IRI %}
+<li><a href="/account/{{account[1]}}.html" >{{ account['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if account[5]==IRI %}
+<li><a href="/account/{{account[1]}}.html" >{{ account['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% endfor %}
+
+{% for iri, information_object in information_object_data.items() %}
+{% if information_object[3]==IRI %}
+<li><a href="/informationobject/{{information_object[1]}}.html" >{{ information_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if information_object[4]==IRI %}
+<li><a href="/informationobject/{{information_object[1]}}.html" >{{ information_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if information_object[5]==IRI %}
+<li><a href="/informationobject/{{information_object[1]}}.html" >{{ information_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if information_object[6]==IRI %}
+<li><a href="/informationobject/{{information_object[1]}}.html" >{{ information_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if information_object[7]==IRI %}
+<li><a href="/informationobject/{{information_object[1]}}.html" >{{ information_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% endfor %}
+
+{% for iri, record in record_data.items() %}
+{% if record[3]==IRI %}
+<li><a href="/record/{{record[1]}}.html" >{{ record['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if record[4]==IRI %}
+<li><a href="/record/{{record[1]}}.html" >{{ record['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if record[5]==IRI %}
+<li><a href="/record/{{record[1]}}.html" >{{ record['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% endfor %}
+
+{% for iri, source in source_data.items() %}
+{% if source[3]==IRI %}
+<li><a href="/source/{{source[1]}}.html" >{{ source['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if source[4]==IRI %}
+<li><a href="/source/{{source[1]}}.html" >{{ source['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if source[5]==IRI %}
+<li><a href="/source/{{source[1]}}.html" >{{ source['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if source[6]==IRI %}
+<li><a href="/source/{{source[1]}}.html" >{{ source['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% endfor %}
+
+{% for iri, event_role in event_role_data.items() %}
+{% if event_role[3]==IRI %}
+<li><a href="/eventrole/{{event_role[1]}}.html" >{{ event_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event_role[4]==IRI %}
+<li><a href="/eventrole/{{event_role[1]}}.html" >{{ event_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event_role[5]==IRI %}
+<li><a href="/eventrole/{{event_role[1]}}.html" >{{ event_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event_role[6]==IRI %}
+<li><a href="/eventrole/{{event_role[1]}}.html" >{{ event_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event_role[7]==IRI %}
+<li><a href="/eventrole/{{event_role[1]}}.html" >{{ event_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event_role[8]==IRI %}
+<li><a href="/eventrole/{{event_role[1]}}.html" >{{ event_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event_role[9]==IRI %}
+<li><a href="/eventrole/{{event_role[1]}}.html" >{{ event_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event_role[10]==IRI %}
+<li><a href="/eventrole/{{event_role[1]}}.html" >{{ event_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% endfor %}
+
+{% for iri, general_object in general_object_data.items() %}
+{% if general_object[3]==IRI %}
+<li><a href="/object/{{general_object[1]}}.html" >{{ general_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if general_object[4]==IRI %}
+<li><a href="/object/{{general_object[1]}}.html" >{{ general_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if general_object[5]==IRI %}
+<li><a href="/object/{{general_object[1]}}.html" >{{ general_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if general_object[6]==IRI %}
+<li><a href="/object/{{general_object[1]}}.html" >{{ general_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if general_object[7]==IRI %}
+<li><a href="/object/{{general_object[1]}}.html" >{{ general_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if general_object[8]==IRI %}
+<li><a href="/object/{{general_object[1]}}.html" >{{ general_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if general_object[9]==IRI %}
+<li><a href="/object/{{general_object[1]}}.html" >{{ general_object['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% endfor %}
+
+{% for iri, object_role in object_role_data.items() %}
+{% if object_role[3]==IRI %}
+<li><a href="/objectrole/{{object_role[1]}}.html" >{{ object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if object_role[4]==IRI %}
+<li><a href="/objectrole/{{object_role[1]}}.html" >{{ object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if object_role[5]==IRI %}
+<li><a href="/objectrole/{{object_role[1]}}.html" >{{ object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if object_role[6]==IRI %}
+<li><a href="/objectrole/{{object_role[1]}}.html" >{{ object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if object_role[7]==IRI %}
+<li><a href="/objectrole/{{object_role[1]}}.html" >{{ object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if object_role[8]==IRI %}
+<li><a href="/objectrole/{{object_role[1]}}.html" >{{ object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if object_role[9]==IRI %}
+<li><a href="/objectrole/{{object_role[1]}}.html" >{{ object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if object_role[10]==IRI %}
+<li><a href="/objectrole/{{object_role[1]}}.html" >{{ object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if object_role[11]==IRI %}
+<li><a href="/objectrole/{{object_role[1]}}.html" >{{ object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if object_role[12]==IRI %}
+<li><a href="/objectrole/{{object_role[1]}}.html" >{{ object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if object_role[13]==IRI %}
+<li><a href="/objectrole/{{object_role[1]}}.html" >{{ object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if object_role[14]==IRI %}
+<li><a href="/objectrole/{{object_role[1]}}.html" >{{ object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if object_role[15]==IRI %}
+<li><a href="/objectrole/{{object_role[1]}}.html" >{{ object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% endfor %}
+
+{% for iri, art_object_role in art_object_role_data.items() %}
+{% if art_object_role[3]==IRI %}
+<li><a href="/artobjectrole/{{art_object_role[1]}}.html" >{{ art_object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if art_object_role[4]==IRI %}
+<li><a href="/artobjectrole/{{art_object_role[1]}}.html" >{{ art_object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if art_object_role[5]==IRI %}
+<li><a href="/artobjectrole/{{art_object_role[1]}}.html" >{{ art_object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if art_object_role[6]==IRI %}
+<li><a href="/artobjectrole/{{art_object_role[1]}}.html" >{{ art_object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if art_object_role[7]==IRI %}
+<li><a href="/artobjectrole/{{art_object_role[1]}}.html" >{{ art_object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if art_object_role[8]==IRI %}
+<li><a href="/artobjectrole/{{art_object_role[1]}}.html" >{{ art_object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if art_object_role[9]==IRI %}
+<li><a href="/artobjectrole/{{art_object_role[1]}}.html" >{{ art_object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if art_object_role[10]==IRI %}
+<li><a href="/artobjectrole/{{art_object_role[1]}}.html" >{{ art_object_role['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% endfor %}
+
+{% for iri, event in event_data.items() %}
+{% if event[3]==IRI %}
+<li><a href="/event/{{event[1]}}.html" >{{ event['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event[4]==IRI %}
+<li><a href="/event/{{event[1]}}.html" >{{ event['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event[5]==IRI %}
+<li><a href="/event/{{event[1]}}.html" >{{ event['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event[6]==IRI %}
+<li><a href="/event/{{event[1]}}.html" >{{ event['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event[7]==IRI %}
+<li><a href="/event/{{event[1]}}.html" >{{ event['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event[8]==IRI %}
+<li><a href="/event/{{event[1]}}.html" >{{ event['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event[9]==IRI %}
+<li><a href="/event/{{event[1]}}.html" >{{ event['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event[10]==IRI %}
+<li><a href="/event/{{event[1]}}.html" >{{ event['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event[11]==IRI %}
+<li><a href="/event/{{event[1]}}.html" >{{ event['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event[12]==IRI %}
+<li><a href="/event/{{event[1]}}.html" >{{ event['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% if event[13]==IRI %}
+<li><a href="/event/{{event[1]}}.html" >{{ event['label'] }}</a></li>
+{% else %}
+{% endif %}
+{% endfor %}
+</ul>
+
+{% else %}
+{% endif %}
+
+{% endblock %}

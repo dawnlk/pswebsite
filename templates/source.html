@@ -1,0 +1,222 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>
+<a href="{{type1_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type1L}}</a>
+<a href="{{type2_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type2L}}</a>
+<a href="{{type3_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type3L}}</a>
+{% if type4L==type4L %} 
+<a href="{{type4_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type4L}}</a>
+{% else %}
+{%endif %}
+</p>
+<br>
+
+{% if title ==title %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasTitle" style="color:black">Title:</a></b>
+{{title}}
+</p>
+{% else %}
+{%endif %}
+
+{% if protagonistL ==protagonistL %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasProtagonist" style="color:black">Protagonist(s):</a></b>
+<a href="{{protagonist_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em;  white-space:nowrap">{{protagonistL}}</a>
+{%else %}  
+{%endif %}
+{% if protagonist1L == protagonist1L %} 
+<a href="{{protagonist1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em;  white-space:nowrap">{{protagonist1L}}</a></p> 
+{%else %}
+</p>   
+{%endif %}
+
+{% if authorOrSpeakerL == authorOrSpeakerL %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasAuthorSpeaker" style="color:black">Author/Speaker(s):</a></b>
+<a href="{{authorOrSpeaker_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em;  white-space:nowrap">{{authorOrSpeakerL}}</a>
+{% else %}
+{%endif %}
+{% if authorOrSpeaker1L == authorOrSpeaker1L %}   
+<a href="{{authorOrSpeaker1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em;  white-space:nowrap">{{authorOrSpeaker1L}}</a></p>
+{% else %}
+</p>
+{%endif %}
+
+
+{% if interviewerOrRecipientL == interviewerOrRecipientL %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasInterviewerRecipient" style="color:black">Interviewer/Recipient(s):</a></b>
+<a href="{{interviewerOrRecipient_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em;  white-space:nowrap">{{interviewerOrRecipientL}}</a>  
+</p>
+{% else %}
+{%endif %}
+
+{% if editorL == editorL %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasEditor" style="color:black">Editor(s):</a></b>
+<a href="{{editor_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em;  white-space:nowrap">{{editorL}}</a>
+{% else %}
+{%endif %}
+{% if editor1L == editor1L %}  
+<a href="{{editor1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em;  white-space:nowrap">{{editor1L}}</a>
+{% else %}
+{%endif %}
+{% if editor2L == editor2L %}  
+<a href="{{editor2_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em;  white-space:nowrap">{{editor2L}}</a></p>
+{% else %}
+</p>
+{%endif %}
+
+{% if publisherL == publisherL %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasPublisher" style="color:black">Publisher:</a></b>
+<a href="{{publisher_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em;  white-space:nowrap">{{publisherL}}</a>  
+</p>
+{% else %}
+{%endif %}
+
+{% if publicationStatusL == publicationStatusL%}   
+<p>
+<b style="line-height:2em"><a href="/term/hasPublicationStatus" style="color:black">Publication Status:</a></b>
+<a href="{{publicationStatus_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em;  white-space:nowrap">{{publicationStatusL}}</a>  
+</p>
+{% else %}
+{%endif %}
+
+{% if PublishedDate ==PublishedDate%}   
+<p>
+<b style="line-height:2em"><a href="/term/hasPublishedDate" style="color:black">Date Published:</a></b>
+{{PublishedDate}}
+</p>
+{% else %}
+{%endif %}
+
+{% if FirstPublishedDate ==FirstPublishedDate%}   
+<p>
+<b style="line-height:2em"><a href="/term/hasFirstPublishedDate" style="color:black">Date First Published:</a></b>
+{{FirstPublishedDate}}
+</p>
+{% else %}
+{%endif %}
+
+{% if sourceFormatL ==sourceFormatL%}   
+<p>
+<b style="line-height:2em"><a href="/term/hasSourceFormat" style="color:black">Accessed as:</a></b>
+<a href="{{sourceFormat_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em;  white-space:nowrap">{{sourceFormatL}}</a>  
+</p>
+{% else %}
+{%endif %}
+
+{% if accessChannelL ==accessChannelL%}   
+<p>
+<b style="line-height:2em"><a href="/term/hasAccessChannel" style="color:black">Accessed via:</a></b>
+<a href="{{accessChannel_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em;  white-space:nowrap">{{accessChannelL}}</a> 
+</p>
+{% else %}
+{%endif %}
+
+{% if URL ==URL %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasURL" style="color:black">URL:</a></b>
+<a href="{{URL}}">{{URL}}</a>  
+</p>
+{% else %}
+{%endif %}
+
+{% if dateURLAccessed ==dateURLAccessed %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasAccessedDate" style="color:black">Date URL Accessed:</a></b>
+{{dateURLAccessed}}
+</p>
+{% else %}
+{%endif %}
+
+{% if archiveName == archiveName %}   
+<p>
+<b style="line-height:2em"><a href="/term/inArchive" style="color:black">Archive:</a></b>
+{{archiveName}}
+</p>
+{% else %}
+{%endif %}
+
+{% if archiveReference==archiveReference %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasArchiveRef" style="color:black">Archive Reference:</a></b>
+{{archiveReference}}
+</p>
+{% else %}
+{%endif %}
+
+{% if comment==comment %}   
+<p>
+<b style="line-height:2em">Comment:</b>
+{{comment}}
+</p>
+{% else %}
+{%endif %}
+
+<p>
+<b style="line-height:2em"><a href="/term/sourceOf" style="color:black">Source of:</a></b>
+<a href="{{account_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{accountL}}</a>
+{% if account1L == account1L %}   
+<a href="{{account1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{account1L}}</a>  
+{% else %}
+{%endif %}
+{% if account2L == account2L %}   
+<a href="{{account2_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{account2L}}</a>  
+{% else %}
+{%endif %}
+{% if account3L == account3L %}   
+<a href="{{account3_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{account3L}}</a>  
+{% else %}
+{%endif %}
+{% if account4L == account4L %}   
+<a href="{{account4_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{account4L}}</a>  
+{% else %}
+{%endif %}
+{% if account5L == account5L %}   
+<a href="{{account5_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{account5L}}</a>  
+{% else %}
+{%endif %}
+{% if account6L == account6L %}   
+<a href="{{account6_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{account6L}}</a>  
+{% else %}
+{%endif %}
+{% if account7L == account7L %}   
+<a href="{{account7_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{account7L}}</a>  
+{% else %}
+{%endif %}
+{% if account8L == account8L %}   
+<a href="{{account8_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{account8L}}</a>  
+{% else %}
+{%endif %}
+{% if account9L == account9L %}   
+<a href="{{account9_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{account9L}}</a>  
+{% else %}
+{%endif %}
+{% if account10L == account10L %}   
+<a href="{{account10_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{account10L}}</a>  
+{% else %}
+{%endif %}
+{% if account11L == account11L %}   
+<a href="{{account11_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{account11L}}</a>  
+{% else %}
+{%endif %}
+{% if account12L == account12L %}   
+<a href="{{account12_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{account12L}}</a>  
+{% else %}
+{%endif %}
+{% if account13L == account13L %}   
+<a href="{{account13_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{account13L}}</a>  
+{% else %}
+{%endif %}
+{% if account14L == account14L %}   
+<a href="{{account14_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{account14L}}</a>  
+{% else %}
+{%endif %}
+</p>
+
+{% endblock %}

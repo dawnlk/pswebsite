@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>
+<a href="{{type1_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type1L}}</a>
+<a href="{{type2_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type2L}}</a>
+<a href="{{type3_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type3L}}</a>
+<a href="{{type4_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type4L}}</a>
+{% if type5L==type5L %} 
+<a href="{{type5_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type5L}}</a>
+{% else %}
+{%endif %}
+{% if type6L==type6L %} 
+<a href="{{type6_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type6L}}</a>
+{% else %}
+{%endif %}
+{% if type7L==type7L %} 
+<a href="{{type7_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type7L}}</a>
+{% else %}
+{%endif %}
+{% if type8L ==type8L%}   
+<a href="{{type8_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type8L}}</a>
+{% else %}
+{%endif %}
+</p>
+<br>
+
+<p>
+<a href="/term/roleIn" style="color:black"><b style="line-height:2em">Role in:</a></b>
+<a href="{{event_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{eventL}}</a>
+{% if event1L==event1L %} 
+<a href="{{event1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event1L}}</a>
+{% else %}
+{%endif %}
+{% if event2L==event2L %} 
+<a href="{{event2_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event2L}}</a>
+{% else %}
+{%endif %}
+</p>
+
+<p>
+<b style="line-height:2em"><a href="/term/playedBy" style="color:black">Played by:</a></b>  
+<a href="{{artObject_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{artObjectL}}</a>
+</p>
+
+{% if  decisionMakerL== decisionMakerL %}   
+<p>
+<b style="line-height:2em"><a href="/term/determinedBy" style="color:black">Determined by:</a></b>
+<a href="{{decisionmaker_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{ decisionMakerL}}</a>
+</p>
+{% else %}
+{%endif %}
+{% if  decisionMaker1L== decisionMaker1L %}  
+<a href="{{decisionmaker1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{ decisionMaker1L}}</a>
+{% else %}
+{%endif %}
+{% if  decisionMaker2L== decisionMaker2L %}  
+<a href="{{decisionmaker2_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{ decisionMaker2L}}</a>
+{% else %}
+{%endif %}
+{% if  decisionMaker3L== decisionMaker3L %}  
+<a href="{{decisionmaker3_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{ decisionMaker3L}}</a>
+{% else %}
+{%endif %}
+{% if  decisionMaker4L== decisionMaker4L %}  
+<a href="{{decisionmaker4_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{ decisionMaker4L}}</a>
+{% else %}
+{%endif %}
+</p>
+
+
+{% if sameEntityL==sameEntityL %}   
+<p>
+<b style="line-height:2em">Same as: </b>
+<a href="{{sameEntity_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{sameEntityL}}</a>
+</p>
+{% else %}
+{%endif %}
+
+
+
+{% endblock %}

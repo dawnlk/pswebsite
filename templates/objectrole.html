@@ -1,0 +1,546 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>
+<a href="{{type1_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type1L}}</a>
+<a href="{{type2_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type2L}}</a>
+<a href="{{type3_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type3L}}</a>
+{% if type4L==type4L %} 
+<a href="{{type4_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type4L}}</a>
+{% else %}
+{%endif %}
+{% if type5L==type5L %} 
+<a href="{{type5_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type5L}}</a>
+{% else %}
+{%endif %}
+{% if type6L==type6L %} 
+<a href="{{type6_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type6L}}</a>
+{% else %}
+{%endif %}
+{% if type7L==type7L %} 
+<a href="{{type7_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type7L}}</a>
+{% else %}
+{%endif %}
+{% if type8L==type8L %} 
+<a href="{{type8_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type8L}}</a>
+{% else %}
+{%endif %}
+{% if type9L==type9L %} 
+<a href="{{type9_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type9L}}</a>
+{% else %}
+{%endif %}
+{% if type10L==type10L %} 
+<a href="{{type10_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type10L}}</a>
+{% else %}
+{%endif %}
+{% if type11L==type11L %} 
+<a href="{{type11_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type11L}}</a>
+{% else %}
+{%endif %}
+{% if type12L==type12L %}   
+<a href="{{type12_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type12L}}</a>
+{% else %}
+{%endif %}
+{% if type13L==type13L %}   
+<a href="{{type13_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type13L}}</a>
+{% else %}
+{%endif %}
+</p>
+<br>
+
+{% if eventL==eventL %}   
+<p>
+<a href="/term/roleIn" style="color:black"><b style="line-height:2em">Role in</a></b> (max.20 shown):
+<a href="{{event_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{eventL}}</a>
+{% else %}
+{%endif %}
+{% if event1L==event1L %} 
+<a href="{{event1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event1L}}</a>
+{% else %}
+{%endif %}
+{% if event2L==event2L %} 
+<a href="{{event2_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event2L}}</a>
+{% else %}
+{%endif %}
+{% if event3L==event3L %} 
+<a href="{{event3_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event3L}}</a>
+{% else %}
+{%endif %}
+{% if event4L==event4L %}   
+<a href="{{event4_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event4L}}</a>
+{% else %}
+{%endif %}
+{% if event5L==event5L %}   
+<a href="{{event5_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event5L}}</a>
+{% else %}
+{%endif %}
+{% if event6L==event6L %}   
+<a href="{{event6_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event6L}}</a>
+{% else %}
+{%endif %}
+{% if event7L==event7L %}   
+<a href="{{event7_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event7L}}</a>
+{% else %}
+{%endif %}
+{% if event8L==event8L %}   
+<a href="{{event8_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event8L}}</a>
+{% else %}
+{%endif %}
+{% if event9L==event9L %}   
+<a href="{{event9_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event9L}}</a>
+{% else %}
+{%endif %}
+{% if event10L==event10L %}   
+<a href="{{event10_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event10L}}</a>
+{% else %}
+{%endif %}
+{% if event11L==event11L %}   
+<a href="{{event11_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event11L}}</a>
+{% else %}
+{%endif %}
+{% if event12L==event12L %}   
+<a href="{{event12_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event12L}}</a>
+{% else %}
+{%endif %}
+{% if event13L==event13L %}   
+<a href="{{event13_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event13L}}</a>
+{% else %}
+{%endif %}
+{% if event14L==event14L %}   
+<a href="{{event14_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event14L}}</a>
+{% else %}
+{%endif %}
+{% if event15L==event15L %}   
+<a href="{{event15_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event15L}}</a>
+{% else %}
+{%endif %}
+{% if event16L==event16L %}   
+<a href="{{event16_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event16L}}</a>
+{% else %}
+{%endif %}
+{% if event17L==event17L %}   
+<a href="{{event17_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event17L}}</a>
+{% else %}
+{%endif %}
+{% if event18L==event18L %}   
+<a href="{{event18_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event18L}}</a>
+{% else %}
+{%endif %}
+{% if event19L==event19L %}   
+<a href="{{event19_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{event19L}}</a>
+{% else %}
+{%endif %}
+</p>
+
+{% if objectL==objectL %}   
+<p>
+<b style="line-height:2em"><a href="/term/playedBy" style="color:black">Played by:</a></b>
+<a href="{{object_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectL}}</a>
+{% else %}
+{%endif %}
+{% if object1L==object1L %} 
+<a href="{{object1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{object1L}}</a>
+{% else %}
+{%endif %}
+{% if object2L==object2L %} 
+<a href="{{object2_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{object2L}}</a>
+{% else %}
+{%endif %}
+{% if object3L==object3L %} 
+<a href="{{object3_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{object3L}}</a>
+{% else %}
+{%endif %}
+</p>
+
+{% if objectRoleL==objectRoleL %}   
+<p>
+<b style="line-height:2em"><a href="/term/determinedBy" style="color:black">Determined by</a></b> (max.20 shown):
+<a href="{{objectRole_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRoleL}}</a>
+{% else %}
+{%endif %}
+{% if objectRole1L==objectRole1L %} 
+<a href="{{objectRole1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole1L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole2L==objectRole2L %} 
+<a href="{{objectRole2_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole2L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole3L==objectRole3L %} 
+<a href="{{objectRole3_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole3L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole4L==objectRole4L %}   
+<a href="{{objectRole4_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole4L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole5L==objectRole5L %}   
+<a href="{{objectRole5_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole5L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole6L==objectRole6L %}   
+<a href="{{objectRole6_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole6L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole7L==objectRole7L %}   
+<a href="{{objectRole7_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole7L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole8L==objectRole8L %}   
+<a href="{{objectRole8_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole8L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole9L==objectRole9L %}   
+<a href="{{objectRole9_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole9L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole10L==objectRole10L %}   
+<a href="{{objectRole10_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole10L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole11L==objectRole11L %}   
+<a href="{{objectRole11_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole11L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole12L==objectRole12L %}   
+<a href="{{objectRole12_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole12L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole13L==objectRole13L %}   
+<a href="{{objectRole13_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole13L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole14L==objectRole14L %}   
+<a href="{{objectRole14_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole14L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole15L==objectRole15L %}   
+<a href="{{objectRole15_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole15L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole16L==objectRole16L %}   
+<a href="{{objectRole16_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole16L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole17L==objectRole17L %}   
+<a href="{{objectRole17_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole17L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole18L==objectRole18L %}   
+<a href="{{objectRole18_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole18L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole19L==objectRole19L %}   
+<a href="{{objectRole19_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole19L}}</a>
+{% else %}
+{%endif %}
+</p>
+
+{% if relatedRoleL==relatedRoleL %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasRelatedRole" style="color:black">Related Role:</a></b>
+<a href="{{relatedRole_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedRoleL}}</a>
+</p>
+{% else %}
+{%endif %}
+	
+{% if occupationL==occupationL %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasOccupation" style="color:black">Occupation:</a></b>
+<a href="{{occupation_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{occupationL}}</a>
+{% else %}
+{%endif %}
+{% if occupation1L==occupation1L %}  
+<a href="{{occupation1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{occupation1L}}</a>
+{% else %}
+{%endif %}
+</p>
+
+{% if socioEconomicDescriptorL==socioEconomicDescriptorL %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasSocioEconomicDescriptor" style="color:black">Socio-Economic Descriptor:</a></b>
+<a href="{{socioEconomicDescriptor_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{socioEconomicDescriptorL}}</a>
+</p>
+{% else %}
+{%endif %}
+
+{% if genderIdentityL==genderIdentityL%}   
+<p>
+<b style="line-height:2em"><a href="/term/hasGenderIdentity" style="color:black">Gender Identity:</a></b>
+<a href="{{genderIdentity_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{genderIdentityL}}</a>
+</p>
+{% else %}
+{%endif %}
+
+{% if approximateAgeInYears==approximateAgeInYears%}   
+<p>
+<b style="line-height:2em"><a href="/term/hasApproximateAgeInYears" style="color:black">Approximate Age:</a></b>
+{{approximateAgeInYears}}
+</p>
+{% else %}
+{%endif %}
+
+{% if objectRole20L==objectRole20L%}   
+<p>
+<b style="line-height:2em"><a href="/term/hasSocialConnectionTo" style="color:black">Social Connection to</a></b> (max.20 shown):
+<a href="{{objectRole20_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole20L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole21L==objectRole21L%}  
+<a href="{{objectRole21_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole21L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole22L==objectRole22L %} 
+<a href="{{objectRole22_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole22L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole23L==objectRole23L %} 
+<a href="{{objectRole23_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole23L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole24L==objectRole24L %}   
+<a href="{{objectRole24_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole24L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole25L==objectRole25L %}   
+<a href="{{objectRole25_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole25L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole26L==objectRole26L %}   
+<a href="{{objectRole6_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole26L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole27L==objectRole27L %}   
+<a href="{{objectRole27_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole27L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole28L==objectRole28L %}   
+<a href="{{objectRole28_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole28L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole29L==objectRole29L %}   
+<a href="{{objectRole29_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole29L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole30L==objectRole30L %}   
+<a href="{{objectRole30_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole30L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole31L==objectRole31L %}   
+<a href="{{objectRole31_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole31L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole32L==objectRole32L %}   
+<a href="{{objectRole32_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole32L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole33L==objectRole33L %}   
+<a href="{{objectRole33_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole33L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole34L==objectRole34L %}   
+<a href="{{objectRole34_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole34L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole35L==objectRole35L %}   
+<a href="{{objectRole35_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole35L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole36L==objectRole36L %}   
+<a href="{{objectRole36_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole36L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole37L==objectRole37L %}   
+<a href="{{objectRole37_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole37L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole38L==objectRole38L %}   
+<a href="{{objectRole38_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole38L}}</a>
+{% else %}
+{%endif %}
+{% if objectRole39L==objectRole39L %}   
+<a href="{{objectRole39_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{objectRole39L}}</a>
+{% else %}
+{%endif %}
+</p>
+
+{% if factorL==factorL%}   
+<p>
+<b style="line-height:2em"><a href="/term/determines" style="color:black">Determines:</a></b>
+<a href="{{factor_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{factorL}}</a>
+{% else %}
+{%endif %}
+{% if factor1L==factor1L %} 
+<a href="{{factor1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{factor1L}}</a>
+{% else %}
+{%endif %}
+{% if factor2L==factor2L %} 
+<a href="{{factor2_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{factor2L}}</a>
+{% else %}
+{%endif %}
+{% if factor3L==factor3L %} 
+<a href="{{factor3_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{factor3L}}</a>
+{% else %}
+{%endif %}
+{% if factor4L==factor4L %}   
+<a href="{{factor4_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{factor4L}}</a>
+{% else %}
+{%endif %}
+{% if factor5L==factor5L %}   
+<a href="{{factor5_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{factor5L}}</a>
+{% else %}
+{%endif %}
+{% if factor6L==factor6L %}   
+<a href="{{factor6_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{factor6L}}</a>
+{% else %}
+{%endif %}
+{% if factor7L==factor7L %}   
+<a href="{{factor7_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{factor7L}}</a>
+{% else %}
+{%endif %}	
+{% if factor8L==factor8L %}
+<b style="line-height:2em"><a href="/term/determines" style="color:black">Determines:</a></b>   
+<a href="{{factor8_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{factor8L}}</a>
+{% else %}
+{%endif %}	
+{% if factor9L==factor9L %}   
+<a href="{{factor9_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{factor9L}}</a>
+{% else %}
+{%endif %}	
+{% if factor10L==factor10L %}   
+<a href="{{factor10_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{factor10L}}</a>
+{% else %}
+{%endif %}	
+</p>
+
+{% if commodityL==commodityL%}   
+<p>
+<b style="line-height:2em"><a href="/term/gives" style="color:black">Gives:</a></b>
+<a href="{{commodity_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodityL}}</a>
+{% else %}
+{%endif %}	
+{% if commodity1L==commodity1L %} 
+<a href="{{commodity1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity1L}}</a>
+{% else %}
+{%endif %}
+{% if commodity2L==commodity2L %} 
+<a href="{{commodity2_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity2L}}</a>
+{% else %}
+{%endif %}
+{% if commodity3L==commodity3L %} 
+<a href="{{commodity3_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity3L}}</a>
+{% else %}
+{%endif %}
+{% if commodity4L==commodity4L %}   
+<a href="{{commodity4_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity4L}}</a>
+{% else %}
+{%endif %}
+{% if commodity5L==commodity5L %}   
+<a href="{{commodity5_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity5L}}</a>
+{% else %}
+{%endif %}
+{% if commodity6L==commodity6L %}   
+<a href="{{commodity6_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity6L}}</a>
+{% else %}
+{%endif %}
+{% if commodity7L==commodity7L %}   
+<a href="{{commodity7_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity7L}}</a>
+{% else %}
+{%endif %}
+{% if commodity8L==commodity8L %}   
+<a href="{{commodity8_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity8L}}</a>
+{% else %}
+{%endif %}
+{% if commodity9L==commodity9L %}   
+<a href="{{commodity9_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity9L}}</a>
+{% else %}
+{%endif %}
+{% if commodity10L==commodity10L %}   
+<a href="{{commodity10_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity10L}}</a>
+{% else %}
+{%endif %}
+{% if commodity11L==commodity11L %}   
+<a href="{{commodity11_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity11L}}</a>
+{% else %}
+{%endif %}
+</p>
+
+{% if commodity12L==commodity12L%}   
+<p>
+<b style="line-height:2em"><a href="/term/receives" style="color:black">Receives:</a></b>
+<a href="{{commodity12_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity12L}}</a>
+{% else %}
+{%endif %}
+{% if commodity13L==commodity13L %}   
+<a href="{{commodity13_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity13L}}</a>
+{% else %}
+{%endif %}
+{% if commodity14L==commodity14L %}   
+<a href="{{commodity14_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity14L}}</a>
+{% else %}
+{%endif %}
+{% if commodity15L==commodity15L %}   
+<a href="{{commodity15_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity15L}}</a>
+{% else %}
+{%endif %}
+{% if commodity16L==commodity16L %}   
+<a href="{{commodity16_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity16L}}</a>
+{% else %}
+{%endif %}
+{% if commodity17L==commodity17L %}   
+<a href="{{commodity17_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity17L}}</a>
+{% else %}
+{%endif %}
+{% if commodity18L==commodity18L %}   
+<a href="{{commodity18_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity18L}}</a>
+{% else %}
+{%endif %}
+{% if commodity19L==commodity19L %}   
+<a href="{{commodity19_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity19L}}</a>
+{% else %}
+{%endif %}
+{% if commodity20L==commodity20L%}   
+<a href="{{commodity20_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity20L}}</a>
+{% else %}
+{%endif %}
+{% if commodity21L==commodity21L%}  
+<a href="{{commodity21_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity21L}}</a>
+{% else %}
+{%endif %}
+{% if commodity22L==commodity22L %} 
+<a href="{{commodity22_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity22L}}</a>
+{% else %}
+{%endif %}
+{% if commodity23L==commodity23L %} 
+<a href="{{commodity23_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity23L}}</a>
+{% else %}
+{%endif %}
+{% if commodity24L==commodity24L %}   
+<a href="{{commodity24_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity24L}}</a>
+{% else %}
+{%endif %}
+{% if commodity25L==commodity25L %}   
+<a href="{{commodity25_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{commodity25L}}</a>
+{% else %}
+{%endif %}
+</p>
+
+
+{% if sameEntityL==sameEntityL %}   
+<p>
+<b style="line-height:2em">Same as: </b>
+<a href="{{sameEntity_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{sameEntityL}}</a>
+{% else %}
+{%endif %}
+{% if sameEntity1L==sameEntity1L %}     
+<a href="{{sameEntity1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{sameEntity1L}}</a>
+{% else %}
+{%endif %}
+{% if sameEntity2L==sameEntity2L %}     
+<a href="{{sameEntity2_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{sameEntity2L}}</a>
+{% else %}
+{%endif %}
+</p>
+
+{% endblock %}

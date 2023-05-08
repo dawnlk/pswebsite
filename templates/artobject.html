@@ -1,0 +1,283 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>
+<a href="{{type1_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type1L}}</a>
+<a href="{{type2_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type2L}}</a>
+<a href="{{type3_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type3L}}</a>
+<a href="{{type4_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type4L}}</a>
+{% if type5L==type5L %} 
+<a href="{{type5_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type5L}}</a>
+{% else %}
+{%endif %}
+{% if type6L==type6L %} 
+<a href="{{type6_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type6L}}</a>
+{% else %}
+{%endif %}
+{% if type7L==type7L %} 
+<a href="{{type7_link}}" style="border-color:#f1f3f2; background-color:#f1f3f2; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; black-space:nowrap">{{type7L}}</a>
+{% else %}
+{%endif %}
+</p>
+<br>
+{% if ImageCreditLine == ImageCreditLine %}   
+<img src="{{image}}" style="max-height:25em" class="img-fluid">
+<p>{{ImageCreditLine}}</p><br>
+{% else %} 
+<img src="/static/img/noimage.png" style="max-height:10em; padding:1em" class="img-fluid">
+<p>Sorry, no image available</p><br>
+{% endif %}
+
+{% if  HeightInMm ==  HeightInMm %}    
+<p>
+<b style="line-height:2em"><a href="/term/hasHeightInMm" style="color:black">Height (mm):</a></b> 
+{{HeightInMm}}
+</p>
+{% else %}
+{%endif %}
+
+{% if WidthInMm ==WidthInMm %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasWidthInMm" style="color:black">Width (mm):</a></b>
+{{WidthInMm}}
+</p>
+{% else %}
+{%endif %}
+
+{% if DepthInMm ==DepthInMm %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasDepthInMm" style="color:black">Depth (mm):</a></b>
+{{DepthInMm}}
+</p>
+{% else %}
+{%endif %}
+
+{% if DiameterInMm ==DiameterInMm %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasDiameterInMm" style="color:black">Diameter (mm):</a></b>
+{{DiameterInMm}}
+</p>
+{% else %}
+{%endif %}
+
+{% if mediumL == mediumL %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasMedium" style="color:black">Medium:</a></b>
+<a href="{{medium_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap"> {{mediumL}}</a>
+</p>
+{% else %}
+{%endif %}
+
+{% if collectionL == collectionL %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasCurrentCollection" style="color:black">Current Collection:</a></b>
+<a href="{{collection_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{collectionL}}</a>
+</p>
+{% else %}
+{%endif %}
+
+{% if formatFigureL ==formatFigureL %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasFormatFigure" style="color:black">Format (Figure):</a></b>
+<a href="{{formatFigure_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{formatFigureL}}</a>
+</p>
+{% else %}
+{%endif %}
+
+{% if colourPaletteL == colourPaletteL%}   
+<p>
+<b style="line-height:2em"><a href="/term/hasColourPalette" style="color:black">Colour Palette:</a></b>
+<a href="{{colourPalette_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{colourPaletteL}}</a>
+</p>
+{% else %}
+{%endif %}
+
+{% if markMakingStyleL == markMakingStyleL%}   
+<p>
+<b style="line-height:2em"><a href="/term/hasMarkMakingStyle" style="color:black">Mark-Making Style:</a></b>
+<a href="{{markMakingStyle_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{markMakingStyleL}}</a>
+</p>
+{% else %}
+{%endif %}
+
+{% if finishedStateL==finishedStateL %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasFinishedState" style="color:black">Finished State:</a></b>
+<a href="{{finishedState_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{finishedStateL}}</a>
+</p>
+{% else %}
+{%endif %}
+
+{% if conditionStateL == conditionStateL %}   
+<p>
+<b style="line-height:2em"><a href="/term/hasConditionState" style="color:black">Condition State:</a></b> 
+<a href="{{conditionState_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{conditionStateL}}</a>
+</p>
+{% else %}
+{%endif %}
+
+{% if recordL == recordL%}   
+<p>
+<b style="line-height:2em"><a href="/term/portraitObjectIn" style="color:black">Portrait Object in:</a></b> 
+<a href="{{record_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{recordL}}</a>
+<p>
+{% else %}
+{%endif %}
+ 
+{% if relatedRecordL == relatedRecordL%}  
+<b style="line-height:2em"><a href="/term/hasRelatedRecord" style="color:black">Related Record:</a></b> 
+<a href="{{relatedRecord_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedRecordL}}</a>
+<p>
+{% else %}
+{%endif %}
+
+{% if artObjectRoleL == artObjectRoleL %}   
+<p>
+<b style="line-height:2em"><a href="/term/plays" style="color:black">Plays Role(s):</a></b> 
+<a href="{{artObjectRole_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{artObjectRoleL}}</a>
+{% else %}
+{%endif %}
+{% if artObjectRole1L == artObjectRole1L %}  
+<a href="{{artObjectRole1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{artObjectRole1L}}</a>
+{% else %}
+{%endif %}
+{% if artObjectRole2L == artObjectRole2L %}  
+<a href="{{artObjectRole2_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{artObjectRole2L}}</a>
+{% else %}
+{%endif %}
+{% if artObjectRole3L == artObjectRole3L %}  
+<a href="{{artObjectRole3_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{artObjectRole3L}}</a>
+{% else %}
+{%endif %}
+{% if artObjectRole4L == artObjectRole4L %}  
+<a href="{{artObjectRole4_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{artObjectRole4L}}</a>
+{% else %}
+{%endif %}
+</p>
+
+<p>
+{% if relatedArtObjectL==relatedArtObjectL%}   
+<b style="line-height:2em"><a href="/term/hasRelatedArtObject" style="color:black">Related Art Object(s) (max.20 shown):</a></b> 
+<a href="{{relatedArtObject_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObjectL}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject1L == relatedArtObject1L%}   
+<a href="{{relatedArtObject1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject1L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject2L == relatedArtObject2L%}   
+<a href="{{relatedArtObject2_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject2L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject3L == relatedArtObject3L%}   
+<a href="{{relatedArtObject3_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject3L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject4L == relatedArtObject3L%}   
+<a href="{{relatedArtObject4_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject4L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject5L == relatedArtObject5L%}   
+<a href="{{relatedArtObject5_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject5L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject6L == relatedArtObject5L%}   
+<a href="{{relatedArtObject6_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject6L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject7L == relatedArtObject5L%}   
+<a href="{{relatedArtObject7_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject7L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject8L == relatedArtObject8L%}   
+<a href="{{relatedArtObject8_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject8L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject9L == relatedArtObject8L%}   
+<a href="{{relatedArtObject9_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject9L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject10L == relatedArtObject10L%}   
+<a href="{{relatedArtObject10_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject10L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject11L == relatedArtObject11L%}   
+<a href="{{relatedArtObject11_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject11L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject12L == relatedArtObject12L%}   
+<a href="{{relatedArtObject12_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject12L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject13L == relatedArtObject13L%}   
+<a href="{{relatedArtObject13_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject13L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject14L == relatedArtObject14L%}   
+<a href="{{relatedArtObject14_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject14L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject15L == relatedArtObject15L%}   
+<a href="{{relatedArtObject15_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject15L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject16L == relatedArtObject16L%}   
+<a href="{{relatedArtObject16_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject16L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject17L == relatedArtObject17L%}   
+<a href="{{relatedArtObject17_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject17L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject18L == relatedArtObject18L%}   
+<a href="{{relatedArtObject18_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject18L}}</a>
+{% else %}
+{%endif %}
+
+{% if relatedArtObject19L == relatedArtObject19L%}   
+<a href="{{relatedArtObject19_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{relatedArtObject19L}}</a>
+{% else %}
+{%endif %}
+</p>
+
+<p>
+{% if link==link%}   
+<b style="line-height:2em">External Link(s):</b> 
+<a href="{{link}}" target=_blank>{{link}}</a>
+{% else %}
+{%endif %}
+{% if link1==link1%}   
+<a href="{{link1}}" target=_blank>{{link1}}</a>
+{% else %}
+{%endif %}
+</p>
+
+{% if sameEntityL==sameEntityL%}  
+<p>
+<b style="line-height:2em">Same as:</b>
+<a href="{{type1_link}}" style="border-color:purple; color:black; border-style:solid; border-width:2px; text-decoration:none; padding:0.2em; line-height:2em; white-space:nowrap">{{sameEntityL}}</a>
+</p>
+{% else %}
+{%endif %}  
+   
+   
+{% endblock %}

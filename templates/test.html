@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Art Objects</h2>
+<ol>
+{% for iri, art_object in art_object_data.items() %}
+<li><a href="/artobject/{{ iri }}">{{ art_object['label'] }}</a></li>
+{% endfor %}
+</ol>
+<br>
+<h2>Accounts</h2>
+<ol>
+{% for iri, account in account_data.items() %}
+<li><a href="/account/{{ iri }}">{{ account['label'] }}</a></li>
+{% endfor %}
+</ol>
+<br>
+<h2>Terms</h2>
+<ol>
+{% for iri, term in term_data.items() %}
+<li><a href="/term/{{ iri }}">{{ term['label'] }}</a></li>
+{% endfor %}
+</ol>
+<br>
+<h2>Information Objects</h2>
+<ol>
+{% for iri, information_object in information_object_data.items() %}
+<li><a href="/informationobject/{{ iri }}">{{ information_object['label'] }}</a></li>
+{% endfor %}
+</ol>
+<br>
+<h2>Records</h2>
+<ol>
+{% for iri, record in record_data.items() %}
+<li><a href="/record/{{ iri }}">{{ record['label'] }}</a></li>
+{% endfor %}
+</ol>
+<br>
+<h2>Sources</h2>
+<ol>
+{% for iri, source in source_data.items() %}
+<li><a href="/source/{{ iri }}">{{ source['label'] }}</a></li>
+{% endfor %}
+</ol>
+<br>
+<h2>Event Roles</h2>
+<ol>
+{% for iri, event_role in event_role_data.items() %}
+<li><a href="/eventrole/{{ iri }}">{{ event_role['label'] }}</a></li>
+{% endfor %}
+</ol>
+<br>
+<h2>General Objects</h2>
+<ol>
+{% for iri, general_object in general_object_data.items() %}
+<li><a href="/object/{{ iri }}">{{ general_object['label'] }}</a></li>
+{% endfor %}
+</ol>
+<br>
+<h2>Object Roles</h2>
+<ol>
+{% for iri, object_role in object_role_data.items() %}
+<li><a href="/objectrole/{{ iri }}">{{ object_role['label'] }}</a></li>
+{% endfor %}
+</ol>
+<br>
+<h2>Art Object Roles</h2>
+<ol>
+{% for iri, art_object_role in art_object_role_data.items() %}
+<li><a href="/artobjectrole/{{ iri }}">{{ art_object_role['label'] }}</a></li>
+{% endfor %}
+</ol>
+<br>
+<h2>Events</h2>
+<ol>
+{% for iri, event in event_data.items() %}
+<li><a href="/event/{{ iri }}">{{ event['label'] }}</a></li>
+{% endfor %}
+</ol>
+
+{% endblock %}
