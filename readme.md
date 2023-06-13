@@ -1,6 +1,6 @@
 # Constructing the Portrait-Sitting Database Website 
 
-The Portrait-Sitting Database website (www.portrait-sitting.co.uk) is one product of a 3-month placement with the Knowledge Media Institute. The aim of the placement project was to develop a method of publishing structured data (specifically, RDF linked data) in a user-friendly website format. I used my own research data, on the subject of portraiture and the portrait-sitting, as a case study for this work.
+The Portrait-Sitting Database website (www.portrait-sitting.co.uk) is one product of a 3-month placement with the Knowledge Media Institute. The aim of the placement project was to develop a method of publishing structured data (specifically, RDF linked data) in a user-friendly website format. I used my own research data, on the subject of portraiture and the portrait sitting, as a case study for this work.
 
 I constructed the Portrait-Sitting Database website in five stages:
 
