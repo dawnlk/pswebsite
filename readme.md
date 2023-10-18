@@ -17,7 +17,7 @@ Steps 1, 2 and 3 may be considered pre-requisites for the construction of a data
 - In 'templates': The Jinja templates that I used to generate the dynamic website in step 4.
 - Below: Step-by-step instructions for generating the dynamic website, using the spreadsheets, application and templates.
 - Below: Step-by-step instructions for using the dynamic website to generate the static website.
-- At https://www.oocdtp.ac.uk/news: An account of the reasons for choosing this method and the experience of the placement (coming soon).
+- Via the [OOC DTP News & Student Blog](https://www.oocdtp.ac.uk/article/placement-spotlight-knowledge-media-institute): An account of the reasons for choosing this method and the experience of the placement.
 
 The documentation assumes a Windows operating system.
 
